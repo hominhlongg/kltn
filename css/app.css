@@ -347,10 +347,10 @@ ul.devided > li:last-child {
     transition: all 0.3s ease-in-out;
 }
 
-/* .btn-hover:hover {
+.btn-hover:hover {
     background-color: var(--btn-color);
     color: var(--btn-bg);
-} */
+}
 
 .slide-controll {
     position: absolute;
@@ -497,6 +497,7 @@ ul.devided > li:last-child {
 .product-card {
     background-color: var(--main-bg-color);
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .product-card-img:hover {
@@ -839,9 +840,9 @@ footer ul li {
     border: 1px solid var(--third-bg-color);
 }
 
-/* .product-img-item:hover {
+.product-img-item:hover {
     background-color: var(--second-bg-color);
-} */
+}
 
 .product-row {
     padding: 45px 0;
