@@ -78,7 +78,7 @@ let products = [
         curr_price: '55.000Đ'
     },
     {
-        name: 'Kì án ánh trăng',
+        name: 'Kỳ án ánh trăng',
         image1: './images/ki-an-anh-trang.png',
         old_price: '80.000Đ',
         curr_price: '75.000Đ'

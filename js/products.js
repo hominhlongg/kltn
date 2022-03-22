@@ -1,45 +1,39 @@
 let products = [
     {
-        name: 'JBL E55BT KEY BLACK',
-        image1: './images/JBL_E55BT_KEY_BLACK_6175_FS_x1-1605x1605px.png',
-        image2: './images/JBL_LIVE650BTNC_Product Image_Folded_Black.webp',
-        old_price: '400',
-        curr_price: '300'
+        name: '5 centimet trên giây',
+        image1: './images/5-tren-giay.png',
+        old_price: '50.000Đ',
+        curr_price: '45.000Đ'
     },
     {
-        name: 'JBL JR 310BT',
-        image1: './images/JBL_JR 310BT_Product Image_Hero_Skyblue.png',
-        image2: './images/JBL_JR 310BT_Product Image_Detail_Skyblue.png',
-        old_price: '400',
-        curr_price: '300'
+        name: 'Sách dạy nấu ăn',
+        image1: './images/sach-day-nau-an-200-mon-an-truyen-thong.png',
+        old_price: '100.000Đ',
+        curr_price: '90.000Đ'
     },
     {
-        name: 'JBL TUNE 750BTNC',
-        image1: './images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png',
-        image2: './images/JBL_E55BT_KEY_RED_6063_FS_x1-1605x1605px.webp',
-        old_price: '400',
-        curr_price: '300'
+        name: 'Bản chất của dối trá',
+        image1: './images/sach-tam-ly-hay-nen-doc.png',
+        old_price: '45.000Đ',
+        curr_price: '40.000Đ'
     },
     {
-        name: 'JBL Horizon',
-        image1: './images/JBLHorizon_001_dvHAMaster.png',
-        image2: './images/JBLHorizon_BLK_002_dvHAMaster.webp',
-        old_price: '400',
-        curr_price: '300'
+        name: 'Tiểu sử Steve Jobs',
+        image1: './images/tieu-su-steve-jobs.png',
+        old_price: '150.000Đ',
+        curr_price: '140.000Đ'
     },
     {
-        name: 'JBL Tune 220TWS',
-        image1: './images/JBL_TUNE220TWS_ProductImage_Pink_ChargingCaseOpen.png',
-        image2: './images/JBL_TUNE220TWS_ProductImage_Pink_Back.png',
-        old_price: '400',
-        curr_price: '300'
+        name: 'Trí tuệ xúc cảm',
+        image1: './images/tri-tue-xuc-cam.png',
+        old_price: '60.000Đ',
+        curr_price: '55.000Đ'
     },
     {
-        name: 'UA Project Rock',
-        image1: './images/190402_E1_FW19_EarbudsWCase_S13_0033-1_1605x1605_HERO.png',
-        image2: './images/190402_E1_FW19_EarbudsWCase_S13_0033-1_1605x1605_BACK.png',
-        old_price: '400',
-        curr_price: '300'
+        name: 'Kỳ án ánh trăng',
+        image1: './images/ki-an-anh-trang.png',
+        old_price: '80.000Đ',
+        curr_price: '75.000Đ'
     },
 ]
 
@@ -51,8 +45,7 @@ renderProducts = (products) => {
             <div class="col-4 col-md-6 col-sm-12">
                 <div class="product-card">
                     <div class="product-card-img">
-                        <img src="${e.image1}" alt="">
-                        <img src="${e.image2}" alt="">
+                        <img style="height: 200px; width: 150px; transform: translateX(-7rem);" src="${e.image1}" alt="">
                     </div>
                     <div class="product-card-info">
                         <div class="product-btn">
