@@ -49,7 +49,7 @@ renderProducts = (products) => {
                     </div>
                     <div class="product-card-info">
                         <div class="product-btn">
-                            <a href="./product-detail.html" class="btn-flat btn-hover btn-shop-now">shop now</a>
+                            <a href="./product-detail.html" class="btn-flat btn-hover btn-shop-now">Đặt hàng</a>
                             <button class="btn-flat btn-hover btn-cart-add">
                                 <i class='bx bxs-cart-add'></i>
                             </button>
