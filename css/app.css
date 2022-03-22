@@ -306,7 +306,16 @@ ul.devided > li:last-child {
     overflow: hidden;
     visibility: hidden;
 }
-
+.slide h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.slide p{
+    line-height: 25px;
+    text-align: justify;
+    color:rgba(100, 100, 111, 0.9);
+    font-style: italic;
+}
 .slide.active {
     visibility: visible;
     height: 100%;
@@ -389,7 +398,7 @@ ul.devided > li:last-child {
 }
 
 .slider:hover .slide-prev {
-    left: 50px;
+    left: 2px;
 }
 
 /* slide animation */
@@ -417,6 +426,7 @@ ul.devided > li:last-child {
     transform: translateX(0);
     opacity: 1;
     visibility: visible;
+    margin-top: 10px;
 }
 
 .left-right {
