@@ -256,6 +256,7 @@ ul.devided > li:last-child {
     transition: padding-left 0.2s ease-in-out;
     margin: 0 20px;
     text-transform: capitalize;
+    width: 150px;
 }
 
 .mega-content ul > li > a:hover {
