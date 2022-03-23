@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATShop</title>
+    <title>LDStore</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/images/logo.png" type="image/png">
     <!-- google font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&display=swap" rel="stylesheet">
     <!-- boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- app css -->
@@ -33,12 +35,15 @@
             <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
                 <i class='bx bx-x'></i>
             </span>
+            <!-- top header -->
+            <!-- end top header -->
             <!-- mid header -->
             <div class="bg-main">
                 <div class="mid-header container">
+                    <img src="./images/favicon3.png" alt="">
                     <a href="#" class="logo">LDStore</a>
                     <div class="search">
-                        <input type="text" placeholder="Tìm kiếm">
+                        <input type="text" placeholder="Tìm kiếm">
                         <i class='bx bx-search-alt'></i>
                     </div>
                     <ul class="user-menu">
@@ -47,16 +52,15 @@
                         <li><a href="#"><i class='bx bx-cart'></i></a></li>
                     </ul>
                 </div>
-            </div>
             <!-- end mid header -->
             <!-- bottom header -->
             <div class="bg-second">
                 <div class="bottom-header container">
                     <ul class="main-menu">
-                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="./index.html">Trang chủ</a></li>
                         <!-- mega menu -->
                         <li class="mega-dropdown">
-                            <a href="./products.html">Cửa hàng<i class='bx bxs-chevron-down'></i></a>
+                            <a href="./products.html">Thể loại<i class='bx bxs-chevron-down'></i></a>
                             <div class="mega-content">
                                 <div class="row">
                                     <div class="col-3 col-md-12">
@@ -107,54 +111,17 @@
                         </div>
                         <div class="box">
                             <span class="filter-header">
-                                Categories
+                                Thể loại
                             </span>
                             <ul class="filter-list">
-                                <li><a href="#">Wireless</a></li>
-                                <li><a href="#">In-ear headphone</a></li>
-                                <li><a href="#">Over-ear headphone</a></li>
-                                <li><a href="#">sport headphone</a></li>
-                            </ul>
-                        </div>
-                        <div class="box">
-                            <span class="filter-header">
-                                Price
-                            </span>
-                            <div class="price-range">
-                                <input type="text">
-                                <span>-</span>
-                                <input type="text">
-                            </div>
-                        </div>
-                        <div class="box">
-                            <ul class="filter-list">
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="status1">
-                                        <label for="status1">
-                                            On sale
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="status2">
-                                        <label for="status2">
-                                            In stock
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="status3">
-                                        <label for="status3">
-                                            Featured
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
+                                <li><a href="#">Tiểu thuyết</a></li>
+                                <li><a href="#">Tâm lý</a></li>
+                                <li><a href="#">Kinh dị</a></li>
+                                <li><a href="#">Khoa học viễn tưởng</a></li>
+                                <li><a href="#">Tiểu sử</a></li>
+                                <li><a href="#">Dạy nấu ăn</a></li>
+                                <li><a href="#">Truyện ngắn</a></li>
+                                <li><a href="#">Tình cảm</a></li>
                             </ul>
                         </div>
                         <div class="box">
@@ -203,58 +170,6 @@
                                         <input type="checkbox" id="remember5">
                                         <label for="remember5">
                                             Sony
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="box">
-                            <span class="filter-header">
-                                Colors
-                            </span>
-                            <ul class="filter-list">
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="remember1">
-                                        <label for="remember1">
-                                            Red
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="remember2">
-                                        <label for="remember2">
-                                            Blue
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="remember3">
-                                        <label for="remember3">
-                                            White
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="remember4">
-                                        <label for="remember4">
-                                            Pink
-                                            <i class='bx bx-check'></i>
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="group-checkbox">
-                                        <input type="checkbox" id="remember5">
-                                        <label for="remember5">
-                                            Yellow
                                             <i class='bx bx-check'></i>
                                         </label>
                                     </div>

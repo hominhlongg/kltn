@@ -6,7 +6,7 @@ let products = [
         curr_price: '45.000Đ'
     },
     {
-        name: 'Sách dạy nấu ăn',
+        name: 'Sách hướng dẫn nấu ăn',
         image1: './images/sach-day-nau-an-200-mon-an-truyen-thong.png',
         old_price: '100.000Đ',
         curr_price: '90.000Đ'
@@ -35,21 +35,77 @@ let products = [
         old_price: '80.000Đ',
         curr_price: '75.000Đ'
     },
+    {
+        name: 'Kỳ án ánh trăng',
+        image1: './images/ki-an-anh-trang.png',
+        old_price: '80.000Đ',
+        curr_price: '75.000Đ'
+    },
+    {
+        name: 'Ảo tưởng tình yêu',
+        image1: './images/ao-tuong-tinh-yeu.png',
+        old_price: '50.000Đ',
+        curr_price: '45.000Đ'
+    },
+    {
+        name: 'Kỳ án ánh trăng',
+        image1: './images/ki-an-anh-trang.png',
+        old_price: '80.000Đ',
+        curr_price: '75.000Đ'
+    },
+    {
+        name: 'Ảo tưởng tình yêu',
+        image1: './images/ao-tuong-tinh-yeu.png',
+        old_price: '50.000Đ',
+        curr_price: '45.000Đ'
+    },{
+        name: 'Kỳ án ánh trăng',
+        image1: './images/ki-an-anh-trang.png',
+        old_price: '80.000Đ',
+        curr_price: '75.000Đ'
+    },
+    {
+        name: 'Ảo tưởng tình yêu',
+        image1: './images/ao-tuong-tinh-yeu.png',
+        old_price: '50.000Đ',
+        curr_price: '45.000Đ'
+    },{
+        name: 'Kỳ án ánh trăng',
+        image1: './images/ki-an-anh-trang.png',
+        old_price: '80.000Đ',
+        curr_price: '75.000Đ'
+    },
+    {
+        name: 'Ảo tưởng tình yêu',
+        image1: './images/ao-tuong-tinh-yeu.png',
+        old_price: '50.000Đ',
+        curr_price: '45.000Đ'
+    },
+    {
+        name: 'Kỳ án ánh trăng',
+        image1: './images/ki-an-anh-trang.png',
+        old_price: '80.000Đ',
+        curr_price: '75.000Đ'
+    },
+    {
+        name: 'Ảo tưởng tình yêu',
+        image1: './images/ao-tuong-tinh-yeu.png',
+        old_price: '50.000Đ',
+        curr_price: '45.000Đ'
+    },
 ]
 
 let product_list = document.querySelector('#products')
-
-renderProducts = (products) => {
     products.forEach(e => {
-        let prod = `
-            <div class="col-4 col-md-6 col-sm-12">
-                <div class="product-card">
-                    <div class="product-card-img">
-                        <img style="height: 200px; width: 150px; transform: translateX(-7rem);" src="${e.image1}" alt="">
-                    </div>
+    let prod = `
+        <div class="col-3 col-md-6 col-sm-12">
+            <div class="product-card">
+                <div class="product-card-img">
+                <img style="height: 200px; width: 150px; transform: translateX(-7rem);" src="${e.image1}" alt="">                 
+                 </div>                
                     <div class="product-card-info">
                         <div class="product-btn">
-                            <a href="./product-detail.html" class="btn-flat btn-hover btn-shop-now">Đặt hàng</a>
+                            <a href="./product-detail.html" class="btn-flat btn-hover btn-shop-now">Chi tiết</a>
                             <button class="btn-flat btn-hover btn-cart-add">
                                 <i class='bx bxs-cart-add'></i>
                             </button>
@@ -67,13 +123,11 @@ renderProducts = (products) => {
                     </div>
                 </div>
             </div>
-        `
+        </div>
+    `
         product_list.insertAdjacentHTML("beforeend", prod)
     })
-}
 
-renderProducts(products)
-renderProducts(products)
 
 let filter_col = document.querySelector('#filter-col')
 
