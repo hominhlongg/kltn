@@ -547,7 +547,7 @@ ul.devided > li:last-child {
 } */
 
 .product-card-info {
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
     position: relative;
 }
@@ -836,7 +836,7 @@ footer ul li {
 .product-img {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .product-img > img {
@@ -861,7 +861,7 @@ footer ul li {
 }
 
 .product-row {
-    padding: 45px 0;
+    padding: 20px 0;
 }
 
 .product-info > * ~ * {
