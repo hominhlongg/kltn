@@ -23,11 +23,11 @@ document.querySelectorAll('.product-img-item').forEach(e => {
     })
 })
 
-document.querySelector('#view-all-description').addEventListener('click', () => {
-    let content = document.querySelector('.product-detail-description-content')
-    content.classList.toggle('active')
-    document.querySelector('#view-all-description').innerHTML = content.classList.contains('active') ? 'view less' : 'view all'
-})
+// document.querySelector('#view-all-description').addEventListener('click', () => {
+//     let content = document.querySelector('.product-detail-description-content')
+//     content.classList.toggle('active')
+//     document.querySelector('#view-all-description').innerHTML = content.classList.contains('active') ? 'view less' : 'view all'
+// })
 
 let products = [
     {
@@ -115,10 +115,11 @@ renderProducts = (products) => {
                     </div>
                     <div class="product-card-info">
                         <div class="product-btn">
-                            <a href="./product-detail.html" class="btn-flat btn-hover btn-shop-now">Chi tiết</a>
-                            <button class="btn-flat btn-hover btn-cart-add">
-                                <i class='bx bxs-cart-add'></i>
-                            </button>
+                        <a href=""><button class="btn-flat btn-hover btn-shop-now">Chi tiết</button></a>                                
+                        <a href=""><button class="btn-flat btn-hover btn-cart-add">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+                        </a>
                         </div>
                         <div class="product-card-name">
                             ${e.name}

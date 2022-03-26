@@ -104,10 +104,11 @@ products.forEach(e => {
                   </div>
                 <div class="product-card-info">
                     <div class="product-btn">
-                        <button class="btn-flat btn-hover btn-shop-now">Chi tiết</button>
-                        <button class="btn-flat btn-hover btn-cart-add">
-                            <i class='bx bxs-cart-add'></i>
-                        </button>
+                    <a href=""><button class="btn-flat btn-hover btn-shop-now">Chi tiết</button></a>                                
+                    <a href=""><button class="btn-flat btn-hover btn-cart-add">
+                        <i class='bx bxs-cart-add'></i>
+                    </button>
+                    </a>
                     </div>
                     <div class="product-card-name">
                         ${e.name}

@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LDStore</title>
+    <title>Product Detail</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="/images/logo.png" type="image/png">
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <!-- google font -->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&display=swap" rel="stylesheet">
     <!-- boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- app css -->
@@ -101,7 +101,7 @@
             <div class="row product-row">
                 <div class="col-5 col-md-12">
                     <div class="product-img" id="product-img">
-                        <img style="height: 500px ; align-item:center;" src="./images/5-tren-giay.png" alt="">
+                        <img style="height: 500px ; align-item: center;" src="./images/5-tren-giay.png" alt="">
                     </div>
                 </div>
                 <div class="col-7 col-md-12">
@@ -126,20 +126,19 @@
                             <span><del>50.000Đ</del></span>
                             <span class="curr-price">45.000Đ</span>
                         </div>
-                        <div class="product-quantity-wrapper">
-                            <span class="product-quantity-btn">
+                        <div class="product-cart-quantity">
+                                <div class="product-quantity-wrapper">
+                            <span class="product-quantity-btn-plus">
                                 <i class='bx bx-minus'></i>
                             </span>
-                            <span class="product-quantity">1</span>
-                            <span class="product-quantity-btn">
-                                <i class='bx bx-plus'></i>
-                                <!-- <input class="minus is-form" type="button" value="-">
-                                <input aria-label="quantity" class="input-qty" max="Số tối đa" min="Số tối thiểu" name="" type="number" value="">
-                                <input class="plus is-form" type="button" value="+">     -->
+                            <input type="text" value="1" class="product-quantity"></input>
+                            <span class="product-quantity-btn-plus">
+                                <i class='bx bx-plus'></i>                              
                             </span>
+                                </div>
                         </div>
                         <div>
-                            <button class="btn-flat btn-hover">Thêm giỏ hàng</button>
+                            <a href="shopping-cart.html"><button class="btn-flat btn-hover">Thêm giỏ hàng</button></a>
                         </div>
                     </div>
                 </div>
@@ -149,31 +148,24 @@
                     Giới thiệu sản phẩm
                 </div>
                 <div class="product-detail-description">
-                    <button class="btn-flat btn-hover btn-view-description" id="view-all-description">
+                    <!-- <button class="btn-flat btn-hover btn-view-description" id="view-all-description">
                         View all
-                    </button>
+                    </button> -->
                     <div class="product-detail-description-content">
                         <p>
                             5 Centimet Trên Giây là câu chuyện về Tono Takaki và Shinohara Akari. Họ biết nhau từ thuở còn học tiểu học, thân thiết như hình với bóng. Giống những đứa trẻ con vô lo vô nghĩ, họ kể cho nhau nghe mọi chuyện từ chân trời dưới bể. Dường như không có chuyện gì có thể giấu kín, ngoại trừ cảm xúc tình cảm đang dần nảy nở trong cả hai.
                         </p>
                         <p>
-                            Lên trung học, Akari chuyển đi, đến một nơi rất xa cậu bạn thân. Ít gặp mặt, ít thư từ, mối liên hệ dần chìm vào quên lãng. Cho đến ngày Takaki quyết định thực hiện chuyến đi gian nan một mình để đến gặp cô.
+                            Bằng giọng văn tinh tế, truyền cảm, 5 centimet trên giây mang đến những khắc họa mới về tâm hồn và khả năng tồn tại của cảm xúc, bắt đầu từ tình yêu trong sáng, ngọt ngào của một cô bé và cậu bé. Ba giai đoạn, ba mảnh ghép, ba ngôi kể chuyện khác nhau nhưng đều xoay quanh nhân vật nam chính, người luôn bị ám ảnh bởi kí ức và những điều đã qua…
                         </p>
                         <p>
-                            Takaki thay đổi chuyến tàu liên tục vì bão tuyết, quãng đường dài khiến cậu đến sân ga cuối cùng vào lúc nửa đêm. Cũng trong đêm vắng vẻ, không còn một hành khách, cô bé Akari vẫn ngồi đợi bạn mình với hộp cơm đã dần nguội lạnh. 
-                        </p>
-                        <p>
-                            Câu chuyện tiếp đó là quá trình các nhân vật lớn lên với dần những thay đổi trưởng thành. Nhưng cảm xúc về tình đầu vẫn còn mãi, chưa bao giờ nguôi ngoai trong sâu thẳm trái tim mỗi người. Giờ đây, khi Takaki biết đáp án mà năm xưa cô bé Akari hỏi: “Cậu có biết 5cm/s là gì không?”, thì điều đó chẳng còn ý nghĩa gì nữa.
-                        </p>
-                        <p>
-                            Nếu đã từng yêu, trái tim bạn hẳn sẽ rung động vì những giây phút nhẹ nhàng trong truyện. Lời khuyên là nếu đọc truyện xong thì hãy xem phim, vì bộ phim sẽ khiến cảm xúc bạn được trọn vẹn hơn với những thước phim sâu lắng và cả một khung trời anh hoa đào lãng đãng nơi “Xứ sở Mặt Trời mọc”. 
+                            Khác với những câu chuyện cuốn bạn chạy một mạch, truyện này khó mà đọc nhanh. Ngón tay bạn hẳn sẽ ngừng lại cả trăm lần trên mỗi trang sách. Chỉ vì một cử động rất khẽ, một câu thoại, hay một xúc cảm bất chợt có thể sẽ đánh thức những điều tưởng chừng đã ngủ quên trong tiềm thức, như ngọn đèn vừa được bật sáng trong tâm trí bạn. Và rồi có lúc nó vượt quá giới hạn chịu đựng, bạn quyết định gấp cuốn sách lại chỉ để tận hưởng chút ánh sáng từ ngọn đèn, hay đơn giản là để vết thương trong lòng mình có thời gian tự tìm xoa dịu.
                         </p>
                     </div>
                 </div>
-            </div>
             <div class="box">
                 <div class="box-header">
-                    Đánh giá
+                    <h2>Đánh giá</h2>
                 </div>
                 <!-- <div class="container">
                     <div class="inner">
@@ -244,9 +236,7 @@
                       </div>
                     </div>
                   </div> -->
-                    <div class="box-header">
-                        Nhận xét
-                    </div>
+                    
                     <div class="user-rate">
                         <div class="user-info">
                             <div class="user-avt">
@@ -356,7 +346,7 @@
             </div>
             <div class="box">
                 <div class="box-header">
-                    Sản phẩm khác
+                    <h2>Sản phẩm khác</h2>
                 </div>
                 <div class="row" id="related-products"></div>
                 <div class="box">

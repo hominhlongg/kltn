@@ -82,10 +82,11 @@ let product_list = document.querySelector('#products')
                  </div>                
                     <div class="product-card-info">
                         <div class="product-btn">
-                            <a href="./product-detail.html" class="btn-flat btn-hover btn-shop-now">Chi tiết</a>
-                            <button class="btn-flat btn-hover btn-cart-add">
-                                <i class='bx bxs-cart-add'></i>
-                            </button>
+                        <a href="product-detail.html"><button class="btn-flat btn-hover btn-shop-now">Chi tiết</button></a>                                
+                        <a href="shopping-cart-html"><button class="btn-flat btn-hover btn-cart-add">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+                        </a>
                         </div>
                         <div class="product-card-name">
                             ${e.name}
