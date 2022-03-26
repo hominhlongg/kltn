@@ -100,17 +100,15 @@ products.forEach(e => {
         <div class="col-3 col-md-6 col-sm-12">
             <div class="product-card">
                 <div class="product-card-img">
-                    <img src="${e.image1}" alt="">
+                    <img style="height: 200px; width: 150px;" src="${e.image1}" alt="">
                   </div>
                 <div class="product-card-info">
                     <div class="product-btn">
-                        <button class="btn-flat btn-hover btn-shop-now">Chi tiết</button>
-                        <button class="btn-flat btn-hover btn-cart-add">
-                            <i class='bx bxs-cart-add'></i>
-                        </button>
-                        <button class="btn-flat btn-hover btn-cart-add">
-                            <i class='bx bxs-heart'></i>
-                        </button>
+                    <a href=""><button class="btn-flat btn-hover btn-shop-now">Chi tiết</button></a>                                
+                    <a href=""><button class="btn-flat btn-hover btn-cart-add">
+                        <i class='bx bxs-cart-add'></i>
+                    </button>
+                    </a>
                     </div>
                     <div class="product-card-name">
                         ${e.name}
