@@ -108,9 +108,6 @@ products.forEach(e => {
                         <button class="btn-flat btn-hover btn-cart-add">
                             <i class='bx bxs-cart-add'></i>
                         </button>
-                        <button class="btn-flat btn-hover btn-cart-add">
-                            <i class='bx bxs-heart'></i>
-                        </button>
                     </div>
                     <div class="product-card-name">
                         ${e.name}

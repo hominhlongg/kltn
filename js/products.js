@@ -6,7 +6,7 @@ let products = [
         curr_price: '45.000Đ'
     },
     {
-        name: 'Sách hướng dẫn nấu ăn',
+        name: 'Sách dạy nấu ăn',
         image1: './images/sach-day-nau-an-200-mon-an-truyen-thong.png',
         old_price: '100.000Đ',
         curr_price: '90.000Đ'
@@ -69,29 +69,6 @@ let products = [
         image1: './images/ao-tuong-tinh-yeu.png',
         old_price: '50.000Đ',
         curr_price: '45.000Đ'
-    },{
-        name: 'Kỳ án ánh trăng',
-        image1: './images/ki-an-anh-trang.png',
-        old_price: '80.000Đ',
-        curr_price: '75.000Đ'
-    },
-    {
-        name: 'Ảo tưởng tình yêu',
-        image1: './images/ao-tuong-tinh-yeu.png',
-        old_price: '50.000Đ',
-        curr_price: '45.000Đ'
-    },
-    {
-        name: 'Kỳ án ánh trăng',
-        image1: './images/ki-an-anh-trang.png',
-        old_price: '80.000Đ',
-        curr_price: '75.000Đ'
-    },
-    {
-        name: 'Ảo tưởng tình yêu',
-        image1: './images/ao-tuong-tinh-yeu.png',
-        old_price: '50.000Đ',
-        curr_price: '45.000Đ'
     },
 ]
 
@@ -108,9 +85,6 @@ let product_list = document.querySelector('#products')
                             <a href="./product-detail.html" class="btn-flat btn-hover btn-shop-now">Chi tiết</a>
                             <button class="btn-flat btn-hover btn-cart-add">
                                 <i class='bx bxs-cart-add'></i>
-                            </button>
-                            <button class="btn-flat btn-hover btn-cart-add">
-                                <i class='bx bxs-heart'></i>
                             </button>
                         </div>
                         <div class="product-card-name">
