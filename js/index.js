@@ -105,7 +105,11 @@ products.forEach(e => {
                 <div class="product-card-info">
                     <div class="product-btn">
                     <a href="product-detail.html"><button class="btn-flat btn-hover btn-shop-now">Chi tiết</button></a>                                
+<<<<<<< HEAD
                     <a href="shopping-cart.html"><button class="btn-flat btn-hover btn-cart-add">
+=======
+                    <a href=""><button class="btn-flat btn-hover btn-cart-add">
+>>>>>>> 393f8240af23c1131b2e0c11bd26919d49c77a5c
                         <i class='bx bxs-cart-add'></i>
                     </button>
                     </a>
