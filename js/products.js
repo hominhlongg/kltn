@@ -83,7 +83,7 @@ let product_list = document.querySelector('#products')
                     <div class="product-card-info">
                         <div class="product-btn">
                         <a href="product-detail.html"><button class="btn-flat btn-hover btn-shop-now">Chi tiết</button></a>                                
-                        <a href="shopping-cart-html"><button class="btn-flat btn-hover btn-cart-add">
+                        <a href="shopping-cart.html"><button class="btn-flat btn-hover btn-cart-add">
                             <i class='bx bxs-cart-add'></i>
                         </button>
                         </a>
