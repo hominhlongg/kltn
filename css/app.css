@@ -1030,10 +1030,14 @@ footer ul li {
   text-transform: capitalize;
   transition: transform 0.3s ease-in-out;
 }
+.menu li i{
+  padding-right: 10px;
+}
 
 .menu li a:hover {
   color: var(--red);
   transform: translateX(10px);
+  transition: ease-in-out 0.3s;
 }
 
 .subscribe {
@@ -1099,6 +1103,8 @@ footer ul li {
 }
 .filter-list li a:hover {
   color: orange;
+  transform: translateX(10px);
+  transition: ease-in-out 0.3s;
 }
 
 .filter-toggle-box {
