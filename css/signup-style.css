@@ -137,23 +137,32 @@ html {
     color: #b4bac0;
     font-weight: 500;
   }
-  .signup-submit {
+  .signup-submit{
     padding: 25px;
     color: white;
     font-size: 18px;
     text-align: center;
     border: 0;
-    outline: none;
-    display: inline-block;
     width: 100%;
     border-radius: 14px;
-    background-color: rgb(130, 201, 30);
+    background: lawngreen;
+    box-shadow: 0 0 2px lawngreen;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
     font-weight: 600;
-    box-shadow: 0 5px 10px 0 rgba(130, 201, 30, 0.5);
     margin-top: 25px;
     margin-bottom: 25px;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+  }
+  .signup-submit:hover{
+    box-shadow: 0 0 5px lawngreen,0 0 35px lawngreen;
+    font-size: 18.5px;
+  }
+  .signup-submit a{
+    color: #fff;
+    text-decoration: none;
   }
   .signup-already {
     text-align: center;
