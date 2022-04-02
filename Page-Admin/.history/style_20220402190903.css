@@ -135,8 +135,7 @@ body {
 
 .logo {
 	height: 60px;
-	object-fit: cover;
-	margin-left: 3rem;
+	padding: 10px;
 }
 
 .avt img {
@@ -487,7 +486,7 @@ body {
 }
 
 .counter {
-	width: 95%;
+	width: 90%;
 	padding: 16px;
 	text-align: center;
 	color: #fff;

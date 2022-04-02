@@ -90,16 +90,16 @@ var data = {
 	labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
 	datasets: [{
 		fill: false,
-		label: 'Kế Hoạch',
+		label: 'Completed',
 		borderColor: successColor,
-		data: [120, 115, 130, 100, 123, 88, 99, 66, 120, 52, 59, 60],
+		data: [120, 115, 130, 100, 123, 88, 99, 66, 120, 52, 59],
 		borderWidth: 2,
 		lineTension: 0,
 	}, {
 		fill: false,
-		label: 'Thực Tế',
+		label: 'Issues',
 		borderColor: dangerColor,
-		data: [66, 44, 12, 48, 99, 56, 78, 23, 100, 22, 47, 70],
+		data: [66, 44, 12, 48, 99, 56, 78, 23, 100, 22, 47],
 		borderWidth: 2,
 		lineTension: 0,
 	}]
