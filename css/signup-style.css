@@ -6,14 +6,12 @@ html {
     box-sizing: border-box;
   }
   body {
-    width: 100%;
     min-height: 100vh;
-    background-color: #f2f3f5;
+    background-image: url(/images/02.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 100px 0;
-    background-image: url(../img/login.jpg);
     background-attachment: fixed;
     background-size: cover;
     object-fit: cover;
@@ -22,7 +20,9 @@ html {
   }
   .signup {
     padding: 90px 75px;
-    background-color: #fff;
+    background:rgb(0,0,0,0.8);
+    color:#fff;
+    box-shadow: 0 0 20px 2px rgb(0,0,0,0.5);;
     width: 100%;
     max-width: 600px;
     border-radius: 30px;
@@ -34,7 +34,7 @@ html {
   .signup-heading {
     font-size: 40px;
     font-weight: bold;
-    color: #373941;
+    color: #fff;
     text-align: center;
     margin-bottom: 35px;
   }
@@ -96,7 +96,7 @@ html {
   }
   .signup-label {
     font-size: 16px;
-    color: #63676b;
+    color: #fff;
     font-weight: 500;
     margin-bottom: 10px;
     display: inline-block;
@@ -114,6 +114,21 @@ html {
     font-size: 18px;
     margin-bottom: 30px;
   }
+  .passwd-box{
+    position: relative;
+  }
+  .eye-passwd{
+    position: absolute;
+    top:40%;
+    right: 4%;
+    font-size: 17px;
+  }
+  .eye-passwd i{
+    color: #000;
+  }
+  #hide1{
+    display: none;
+  }
   .signup-input::-webkit-input-placeholder {
     color: #b4bac0;
     font-weight: 500;
@@ -122,23 +137,32 @@ html {
     color: #b4bac0;
     font-weight: 500;
   }
-  .signup-submit {
+  .signup-submit{
     padding: 25px;
     color: white;
     font-size: 18px;
     text-align: center;
     border: 0;
-    outline: none;
-    display: inline-block;
     width: 100%;
     border-radius: 14px;
-    background-color: rgb(130, 201, 30);
+    background: lawngreen;
+    box-shadow: 0 0 2px lawngreen;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
     font-weight: 600;
-    box-shadow: 0 5px 10px 0 rgba(130, 201, 30, 0.5);
     margin-top: 25px;
     margin-bottom: 25px;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+  }
+  .signup-submit:hover{
+    box-shadow: 0 0 5px lawngreen,0 0 35px lawngreen;
+    font-size: 18.5px;
+  }
+  .signup-submit a{
+    color: #fff;
+    text-decoration: none;
   }
   .signup-already {
     text-align: center;
