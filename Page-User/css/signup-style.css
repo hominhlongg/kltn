@@ -169,6 +169,9 @@ html {
     font-size: 16px;
     color: #999;
   }
+  .signup-already a{
+    text-decoration: underline;
+  }
   .signup-login-link {
     color: #2979ff;
     text-decoration: none;
