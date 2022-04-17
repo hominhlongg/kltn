@@ -32,11 +32,57 @@
 .light .logo-dark, .light .light-icon {
 	display: none;
 }
-
+.title-header-card h2{
+	font-size: 35px;
+}
 .dark .logo-light, .dark .dark-icon {
 	display: none;
 }
-
+.admin-add-product{
+	/* margin-left: auto; */
+	font-size: 16px;
+	line-height: 1.5;
+	border-radius: 4px;
+	background-color: #4834d4;
+	color: #fff;
+	/* border:none; */
+}
+.admin-add-product a{
+	text-decoration: none;
+	color: #fff;
+}
+.wrap-card-content .title-th{
+	padding-left: 120px;
+}
+.wrap-card-content table{
+	width: 100%;
+}
+.card-content td{}
+.select-dm{
+	font-size: 15px;
+}
+.mng-user-title{
+	text-align: center;
+}
+.voucher-img{
+	width: 70px;
+	height: 70px;
+	background:url(img/mpvc.png)
+}
+.submit-add{
+	float: right;
+	margin-right: 10px;
+	background-color: #4834d4;
+	border:none;
+	border-radius: 4px;
+	color: #fff;
+	padding: 8px 8px;
+	margin-top: 5px;
+}
+.wrap-card-content input{
+	width: 100%;
+	padding:5px 5px;
+}
 .bg-primary {
   background: var(--primary-color);
 }
@@ -550,7 +596,6 @@ table th {
 	border-top: 1px solid var(--second-bg-color);
 	border-bottom: 1px solid var(--second-bg-color);
 	padding: 15px 12px;
-	text-align: left;
 }
 
 
