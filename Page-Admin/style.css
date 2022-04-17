@@ -135,7 +135,8 @@ body {
 
 .logo {
 	height: 60px;
-	transform: translateX(5rem);
+	object-fit: cover;
+	margin-left: 3rem;
 }
 
 
@@ -288,7 +289,6 @@ body {
 	padding-top: 75px;
 	background: var(--second-bg-color);
 	transition: margin-left .5s;
-	
 }
 
 .sidebar {
@@ -489,11 +489,13 @@ body {
 }
 
 .counter {
+	width: 95%;
 	padding: 16px;
 	text-align: center;
 	color: #fff;
 	border-radius: 10px;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	margin: 0.6rem;
 }
 
 .couner i {
@@ -506,6 +508,7 @@ body {
 	border-radius: 10px;
 	margin-bottom: 10px;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	
 }
 
 .card-header {
