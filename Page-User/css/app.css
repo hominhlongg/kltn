@@ -97,7 +97,7 @@ img.i4-img{
   width: 63px;
   height: 37px;
   position: absolute;
-  left: 75.2%;
+  /* left: 75.2%; */
   font-size: 25px;
   border-radius: 0 10px 10px 0;
   background-color: #f6003c;
