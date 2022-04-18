@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="icon" type="image/png" href="assets/logo.png"/>
+
+	<!-- Import lib -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- End import lib -->
+	<!-- tinymce -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+		<!-- nav left -->
+		<ul class="navbar-nav">
+			
+			<li class="nav-item">
+				<img  src="assets/logo.png" alt="ATPro logo" class="logo logo-light">
+				<img  src="assets/logo.png" alt="ATPro logo" class="logo logo-dark">
+				<span style="font-size: 30px; font-weight: bold; transform: translateY(-20px); display: inline-block;">LDStore</span>
+			</li>
+		</ul>
+		<!-- end nav left -->
+		<!-- form -->
+		<form class="navbar-search">
+			<input type="text" name="Search" class="navbar-search-input" placeholder="What you looking for...">
+			<i class="fas fa-search"></i>
+		</form>
+		<!-- end form -->
+		<!-- nav right -->
+		<ul class="navbar-nav nav-right">
+			<li class="nav-item mode">
+				<a class="nav-link" href="#" onclick="switchTheme()">
+					<i class="fas fa-moon dark-icon"></i>
+					<i class="fas fa-sun light-icon"></i>
+				</a>
+			</li>
+			<!--  -->
+			<li class="nav-item avt-wrapper">
+				<div class="avt dropdown">
+					<img src="assets/tuat.jpg" alt="User image" class="dropdown-toggle" data-toggle="user-menu">
+					<ul id="user-menu" class="dropdown-menu">
+						<li  class="dropdown-menu-item">
+							<a class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-user-tie"></i>
+								</div>
+								<span>Profile</span>
+							</a>
+						</li>
+						
+						<li  class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-sign-out-alt"></i>
+								</div>
+								<span>Logout</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<!-- end nav right -->
+	</div>
+	<!-- end navbar -->
+	<!-- sidebar -->
+	<div class="sidebar">
+		<ul class="sidebar-nav">
+			<li class="sidebar-nav-item">
+				<a href="statistics.html" class="sidebar-nav-link">
+					<div>
+						<i class="fa-solid fa-chart-simple"></i>
+					</div>
+					<span>Thông Kê</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="Manage-User.html" class="sidebar-nav-link">
+					<div>
+						<i class="fa-solid fa-person"></i>
+					</div>
+					<span>Người Dùng</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="Manage-Product.html" class="sidebar-nav-link active">
+					<div>
+						<i class="fa-solid fa-list"></i>
+					</div>
+					<span>Sản Phẩm</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="Manage-Order.html" class="sidebar-nav-link">
+					<div>
+						<i class="fa-solid fa-basket-shopping"></i>
+					</div>
+					<span>Đơn Hàng</span>
+				</a>
+			</li>
+			<li  class="sidebar-nav-item">
+				<a href="Manage-Voucher.html" class="sidebar-nav-link">
+					<div>
+						<i class="fa-solid fa-ticket"></i>
+					</div>
+					<span>Khuyến Mãi</span>
+				</a>
+			</li>
+			
+		</ul>
+	</div>
+
+	<!-- wrapper add product begin -->
+	<div class="wrapper">
+		<div class="table-manage">
+			<div class="card">
+				<div class="card-header">
+					<div class="title-header-card">
+
+						<h2 style="padding-left:140px;">Thêm Voucher</h2>
+					</div>
+					<div class="card-content">
+						<div class="wrap-card-content">
+							<table>
+								<tr>
+									<th class="title-th">Mã voucher</th>
+									<th><input type="text" required></th>
+								</tr>
+								<tr>
+									<th class="title-th">Hình ảnh voucher</th>
+									<th><input type="file" required></th>
+								</tr>
+								<tr>
+									<th class="title-th">Danh mục</th>
+									<th><select name="danhmuc" id="danhmuc" required class="select-dm">
+										
+										<option value="">--- Chọn danh mục sản phẩm ---</option>
+										<option>Tất cả</option>
+										<optgroup label="Kinh dị">
+											<option value="kdtcc">Khởi đầu từ cái chết</option>
+										</optgroup>
+										<optgroup label="Tâm lý">
+											<option value="dnt">Đắc nhân tâm</option>
+										</optgroup>
+										<optgroup label="Tình cảm">
+											<option value="atty">Ảo tưởng tình yêu</option>
+										</optgroup>
+										<optgroup label="Tiểu thuyết">
+											<option value="5cm/s">5 centimet trên giây</option>
+										</optgroup>
+										<optgroup label="Truyện tranh">
+											<option value="tddv">Thần đồng đất việt</option>
+										</optgroup>
+									</select></th>
+								</tr>
+								<tr>
+									<th class="title-th">Giá giảm</th>
+									<th><input type="text" required></th>
+								</tr>
+								<tr>
+									<th class="title-th">Số lượng</th>
+									<th><input type="text" required></th>
+								</tr>
+								<tr>
+									<th class="title-th">Bắt đầu</th>
+									<th><input type="date" required></th>
+								</tr>
+								<tr>
+									<th class="title-th">Kết thúc</th>
+									<th><input type="date" required></th>
+								</tr>
+
+								<tr>
+									<th class="title-th" re>Mô tả</th>
+									<th>
+										<textarea class="tinymce" name="t1" id="" cols="30" rows="4"></textarea>
+									</th>
+								</tr>
+							</table>
+						</div>
+						<button class="submit-add">Thêm mới</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+	<script src="index.js"></script>
+	<script src="./tinymce/tinymce.min.js"></script>
+	<script src="./tinymce/jquery.tinymce.min.js"></script>
+	<script src="./tinymce/init-tinymce.js"></script>
+</body>
+</html>

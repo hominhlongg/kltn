@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&display=swap" rel="stylesheet">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- app css -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <!-- mobile menu -->
+        <div class="mobile-menu bg-second">
+            <a href="#" class="mb-logo">LDStore</a>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='bx bx-menu'></i>
+            </span>
+        </div>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='bx bx-x'></i>
+            </span>
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <img src="./images/favicon3.png" alt="">
+                    <a href="#" class="logo">LDStore</a>
+                    <div class="search">
+                        <input type="text" placeholder="Tìm kiếm">
+                    </div>
+                    <button type="button" class="search-icon-custom">
+                        <i class='bx bx-search-alt'></i>
+                    </button>
+                    <ul class="user-menu">
+                        <li><a href="sign-in.html"><i class='bx bx-user-circle'></i></a></li>
+                        <li><a href="shopping-cart.html"><i class='bx bx-cart'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="profile-main" style="display: flex;">
+            <div class="box-left-1" style="height:auto;width: 20%; ">
+                <div class="in4-avt-content" style="display: flex;">
+                    <div class="in4-avt">
+                        <img src="/Page-Admin/img/mpvc.png"class="i4-img" alt=""style="">
+                    </div>               
+                    <div class="in4-avt-shopname">
+                        LDstore
+                    </div>
+                </div>     
+                <div class="in4-sidebar">
+                    <ul class="in4-myacc-detail">
+                        <div class="i4-myacc">Tài khoản của tôi</div>
+                        <li> <a href="#" class="hoso-hv" style="color:#f6003c;">Hồ sơ</a></li>
+                        <li><a href="password.html" class="dmk-hv">Đổi mật khẩu</a></li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="wrap-box-right-2" style="width:980px">
+                <div class="box-right-2" style="height: auto; ">
+                    <div class="i4-title-side" >
+                        <h1 style="padding-bottom: 5px;text-transform: capitalize;font-weight: 500;font-size: 20px;">Hồ sơ của tôi</h1>
+                        <p style="font-size: 14px;">Quản lý hồ sơ để bảo mật tài khoản</p>
+                    </div>
+                    <div class="wrap-box-right-content" style="display: flex;">
+                        <div class="wrap-box-right-content-1" style="width:80%;">
+                            <div class="user-name-wrap" style="display: flex;" >
+                                <div class="user-name-label"><label for="">Tên đăng nhập</label></div>
+                                <div class="user-name-console">LDStore</div>
+                            </div>
+                            <div class="name-wrap" style="display: flex;">
+                                <div class="name-label"><label for="">Tên</label></div>
+                                <div class="name-input" style="width:80%"><input type="text" style="width:80%;padding: 5px; "></div>
+                            </div>
+                            <div class="email-wrap" style="display: flex;">
+                                <div class="email-label"><label for="">Email</label></div>
+                                <div class="email-console">abcxy****23@gmail.com</div>
+                                <div class="email-change"><a href="email.html">Thay đổi</a></div>
+                            </div>
+                            <div class="phone-wrap" style="display: flex;">
+                                <div class="phone-label"><label for="">Số điện thoại</label></div>
+                                <div class="phone-console">********60</div>
+                                <div class="phone-change"><a href="#">Thay đổi</a></div>
+                            </div>
+                            <div class="address-wrap"style="display:flex;">
+                                <div class="address-label"><label for="">Địa chỉ</label></div>
+                                <div class="address-console">40 Dương Quảng Hàm , P13, Quận Bình Thạnh , TP.HCM</div>
+                                <div class="address-change"><a href="#">Thay đổi</a></div>
+                            </div>
+                            <div class="gender-wrap" style="display: flex;">
+                                <div class="gender-label"><label for="">Giới tính</label></div>
+                                <div class="gender-button-checked" style="display: flex;">
+                                    <div class="gender-female"style="display:flex;">
+                                        <input type="radio" id="female" name="gender" aria-checked="true" checked>
+                                        <p>Nam</p>
+                                    </div>
+                                    <div class="gender-male" style="display: flex;">
+                                        <input type="radio" id="male" name="gender" aria-checked="false"><p>Nữ</p>
+                                    </div>
+                                    <div class="gender-another"style="display: flex;">
+                                        <input type="radio" id="another" name="gender" aria-checked="false"><p>Khác</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="birth-wrap" style="display: flex;">
+                                <div class="birth-label"><label for="">Ngày sinh</label></div>
+                                <div class="birth-input">
+                                    <input type="date">
+                                </div>
+                            </div>
+                            <div class="save-i4-button">
+                                <button><a href="#">Lưu</a></button>
+                            </div>
+                        </div>
+
+                        <div class="box-right-2-avt"style="display:flex;">
+                            <div class="box-right-2-avt-wrap">
+                                <div class="wrap-image-change-shop" style="display: flex;">
+                                    <div class="avt-url-change"><img src="/Page-Admin/img/mpvc.png" alt=""></div>
+                                </div>
+                                <input type="file" accept=" .jpg, .jpeg, .png" class="avt-url-change-btn">
+                            </div>
+                        </div>
+
+                    </div>
+                      
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+    <footer class="bg-second">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">Sản phẩm</h3>
+                    <ul class="menu">
+                        <li><a href="#"><i class="fa-solid fa-book"></i>Tiểu thuyết</a></li>
+                        <li><a href="#"><i class="fa-solid fa-book"></i>Tâm lý</a></li>
+                        <li><a href="#"><i class="fa-solid fa-book"></i>Kinh dị</a></li>
+                        <li><a href="#"><i class="fa-solid fa-book"></i>Truyện tranh</a></li>
+                        <li><a href="#"><i class="fa-solid fa-book"></i>Tình cảm</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">Dịch vụ</h3>
+                    <ul class="menu">
+                        <li><a href="#"><i class="fa-solid fa-ticket"></i>Khuyến mãi</a></li>
+                        <li><a href="#"><i class="fa-solid fa-truck-fast"></i>Chính sách vận chuyển</a></li>
+                        <li><a href="#"><i class="fa-solid fa-person"></i>Chính sách hỗ trợ khách hàng</a></li>
+                        <li><a href="#"><i class="fa-solid fa-lock"></i>Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">Hỗ trợ</h3>
+                    <ul class="menu">
+                        <li><a href="#"><i class="fa-solid fa-phone"></i>02871059999</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i>Cơ sở 1: 233A Phan Văn Trị, P.11, Q. Bình Thạnh, TP. HCM</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i>Cơ sở 2: 45 Nguyễn Khắc Nhu, P. Cô Giang, Q.1, TP. HCM</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i>Cơ sở 3: 69/68 Đặng Thùy Trâm, P. 13, Q. Bình Thạnh, TP. HCM</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="contact" style="transform: translateY(-3rem);">
+                        <img src="./images/logoVLU.png" alt="">
+                        <h3 class="contact-header">
+                            LDStore
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Copyright LDStore since 2022</div>
+</footer>
+</body>
+
