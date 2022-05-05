@@ -16,6 +16,7 @@
     <!-- app css -->
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -36,7 +37,7 @@
             <div class="bg-main">
                 <div class="mid-header container">
                     <img src="./images/favicon3.png" alt="">
-                    <a href="#" class="logo">LDStore</a>
+                    <a href="index.html" class="logo">LDStore</a>
                     <div class="search">
                         <input type="text" placeholder="Tìm kiếm">                    
                         <button type="button" class="search-icon-custom">
@@ -59,13 +60,17 @@
             <!-- title bar box -->
             
             <div class="container">
-                <div class="addr-title">Delivery address</div>
                 <div class="bg-addr">
-                    <div class="line-through" style="width: 100%;height: 3px; background-color: #fff;"></div>
-                    <div class="addr-detail">Hong Vinh Dat (+84) 384173970</div>
-                    <div class="addr-detail-addr">27/1/9 Đường số 9 , Phường 16 , Quận Gò Vấp ,TP.Hồ Chí Minh</div>
-                    <div class="addr-default">Default</div>
-                    <div class="addr-change">change</div>
+                    <div class="line-through" style="width: 100%;height: 3px; background-color: #fff;background-position-x: -30px;"></div>
+                    <div class="addr-content-payment">
+                        <div class="addr-title"><i class="bx bxs-map"></i> Delivery address</div>
+                        <div class="addr-content-i4" style="display: flex;">
+                            <div class="addr-detail" style="text-transform: uppercase;">Hong Vinh Dat (+84) 384173970</div>
+                            <div class="addr-detail-addr" style="font-size: 16px;">27/1/9 Đường số 9 , Phường 16 , Quận Gò Vấp, Phường 16 ,TP.Hồ Chí Minh</div>
+                            <div class="addr-default">Default</div>
+                            <div class="addr-change"style="text-transform: uppercase;"> <a href="#">Change</a></div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="box-order">
@@ -82,12 +87,12 @@
             <!-- begin detail shopping cart -->
             
             <div class="container">
-                <div class="inline-box">
-                    <div class="inline-favorite-brand">Mall</div>
-                    <div class="inline-shop-name">LDStore</div>
-                    <div class="inline-mess">Chat Now</div>
-                </div>
                 <div class="shopping-cart-detail-box">
+                    <div class="inline-box">
+                        <div class="inline-favorite-brand">Mall</div>
+                        <div class="inline-shop-name">LDStore</div>
+                        <div class="inline-mess">Chat Now</div>
+                    </div>
                     <div class="product-shopping-cart-card">
                         <div class="wrap-checkbox-img">
                             <div class="product-cart-img" style="background-image: url(./images/tri-tue-xuc-cam.png);">
@@ -159,68 +164,52 @@
             </div>
         </div>
         
-        <footer class="bg-second">
-            <div class="container">
-                <div class="row">
-                    <div class="col-3 col-md-6">
-                        <h3 class="footer-head">Sản phẩm</h3>
-                        <ul class="menu">
-                            <li><a href="#">Help center</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">product help</a></li>
-                            <li><a href="#">warranty</a></li>
-                            <li><a href="#">order status</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-3 col-md-6">
-                        <h3 class="footer-head">Dịch vụ</h3>
-                        <ul class="menu">
-                            <li><a href="#">Help center</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">product help</a></li>
-                            <li><a href="#">warranty</a></li>
-                            <li><a href="#">order status</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-3 col-md-6">
-                        <h3 class="footer-head">Hỗ trợ</h3>
-                        <ul class="menu">
-                            <li><a href="#">Help center</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">product help</a></li>
-                            <li><a href="#">warranty</a></li>
-                            <li><a href="#">order status</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-3 col-md-6 col-sm-12">
-                        <div class="contact">
-                            <h3 class="contact-header">
-                                LDStore
-                            </h3>
-                            <ul class="contact-socials">
-                                <li><a href="#">
-                                        <i class='bx bxl-facebook-circle'></i>
-                                    </a></li>
-                                <li><a href="#">
-                                        <i class='bx bxl-instagram-alt'></i>
-                                    </a></li>
-                                <li><a href="#">
-                                        <i class='bx bxl-youtube'></i>
-                                    </a></li>
-                                <li><a href="#">
-                                        <i class='bx bxl-twitter'></i>
-                                    </a></li>
-                            </ul>
-                        </div>
-                        <div class="subscribe">
-                            <input type="email" placeholder="ENTER YOUR EMAIL">
-                            <button>subscribe</button>
-                        </div>
+<!-- footer -->
+<footer class="bg-second">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md-6">
+                <h3 class="footer-head">Sản phẩm</h3>
+                <ul class="menu">
+                    <li><a href="#"><i class="fa-solid fa-book"></i>Tiểu thuyết</a></li>
+                    <li><a href="#"><i class="fa-solid fa-book"></i>Tâm lý</a></li>
+                    <li><a href="#"><i class="fa-solid fa-book"></i>Kinh dị</a></li>
+                    <li><a href="#"><i class="fa-solid fa-book"></i>Truyện tranh</a></li>
+                    <li><a href="#"><i class="fa-solid fa-book"></i>Tình cảm</a></li>
+                </ul>
+            </div>
+            <div class="col-3 col-md-6">
+                <h3 class="footer-head">Dịch vụ</h3>
+                <ul class="menu">
+                    <li><a href="#"><i class="fa-solid fa-ticket"></i>Khuyến mãi</a></li>
+                    <li><a href="#"><i class="fa-solid fa-truck-fast"></i>Chính sách vận chuyển</a></li>
+                    <li><a href="#"><i class="fa-solid fa-person"></i>Chính sách hỗ trợ khách hàng</a></li>
+                    <li><a href="#"><i class="fa-solid fa-lock"></i>Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+            <div class="col-3 col-md-6">
+                <h3 class="footer-head">Hỗ trợ</h3>
+                <ul class="menu">
+                    <li><a href="#"><i class="fa-solid fa-phone"></i>02871059999</a></li>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i>Cơ sở 1: 233A Phan Văn Trị, P.11, Q. Bình Thạnh, TP. HCM</a></li>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i>Cơ sở 2: 45 Nguyễn Khắc Nhu, P. Cô Giang, Q.1, TP. HCM</a></li>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i>Cơ sở 3: 69/68 Đặng Thùy Trâm, P. 13, Q. Bình Thạnh, TP. HCM</a></li>
+                </ul>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="contact" style="transform: translateY(-3rem);">
+                    <img src="./images/logoVLU.png" alt="">
+                    <h3 class="contact-header">
+                        LDStore
+                    </h3>
                     </div>
                 </div>
             </div>
-            <div class="copyright">Copyright LDStore since 2022</div>
-        </footer>
+        </div>
+    </div>
+    <div class="copyright">Copyright LDStore since 2022</div>
+</footer>
+<!-- end footer -->
         <script src="./js/app.js"></script>
         <script src="./js/product-detail.js"></script>
     </body>

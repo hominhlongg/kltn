@@ -82,15 +82,16 @@ img.i4-img{
 }
 .box-order {
   background-color: #fff;
-  margin: 10px 0;
+  margin-top: 10px;
   border-radius: 2px;
   height: 55px;
   display: flex !important;
   /* /* justify-content: center; */
   align-items: center;
   text-transform: capitalize;
-  padding: 5px;
+  padding: 5px 30px;
 }
+
 .search-icon-custom {
   color: #fff;
   border: 0 solid #000;
@@ -139,18 +140,24 @@ img.i4-img{
 .wrap-checkbox-img{
     display: flex !important;
     background-color: #fff;
-    padding: 5px 5px;
+    padding: 5px 30px;
     text-align: center;
     align-items: center;
-    height: auto;
     width: 35%;
+    margin-top: 10px;
+}
+.payment-method-button-2:focus,.payment-method-button1:focus{
+  border: #f6003c solid 1px;
+  color: #f6003c;
+
 }
 .product-shopping-cart-card{
     display: flex !important;
     background-color: #fff;
     text-align: center;
     align-items: center;
-    padding-top:25px;
+    padding-top:10px;
+    height: auto;
 }
 .product-cart-name {
   text-transform: uppercase;
@@ -253,23 +260,52 @@ img.i4-img{
     font-size: 16px;
     text-align: center;
 }
+
 .inline-box{
-    height: 20px;
+    /* height: 50px; */
     width: auto;
     background-color: #fff;
     color: #000;
     display: flex;
-    padding:2px 5px;
+    padding:5px 30px;
     position:absolute;
+    margin-bottom: 10px;
 }
 .bg-addr{
     height: auto;
     background-color: #fff;
-    display: flex;
+    /* display: flex; */
+}
+.addr-title{
+  font-size: 18px;
+  margin-bottom: 20px;
+  color:#f6003c;
+}
+.addr-detail{
+  font-weight: 600;
+}
+.addr-detail-addr{
+  margin-left: 40px;
+}
+.addr-default{
+  margin-left: 140px;
+  color: #929292;
+  font-size: 14px;
+}
+.addr-change{
+  margin-left: 160px;
+  color: #05a;
+  font-weight: 550;
 }
 .line-through{
     background-size: 116px 3px;
     background-image: repeating-linear-gradient(45deg,#6fa6d6,#6fa6d6 33px,transparent 0,transparent 41px,#f18d9b 0,#f18d9b 74px,transparent 0,transparent 82px);
+}
+.addr-content-payment{
+  padding: 28px 30px 24px;
+}
+.addr-content-i4{
+  text-transform: capitalize;
 }
 .inline-shop-name{
     margin-left: 5px;
@@ -292,8 +328,8 @@ img.i4-img{
     font-size: 13px;
     padding: 0px 4px;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 } 
 .payment-cart-voucher{
     background-color: #fff;
@@ -327,7 +363,7 @@ img.i4-img{
     width: 50%;
     background-color: #fff;
     height: auto;
-    padding: 16px 20px;
+    padding: 16px 30px;
     display: flex;
 }
 .note-box-message-shop{
@@ -1377,9 +1413,9 @@ footer ul li {
 }
 
 .user-info {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  transform: translateX(-1.5rem);
+  
+  
   margin-bottom: 20px;
 }
 
@@ -1772,6 +1808,24 @@ footer ul li {
 .wrap-image-change-shop{
   justify-content: center;
   position: relative;
+}
+
+
+
+/* -----------------------------------------------comment----------------------------------------------------*/
+.view-star{
+  padding: 6px 13px;
+  margin: 10px 20px;
+  background-color: white;
+  border: 1px solid gray;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+.view-star:hover{
+  border: 1px solid orange;
+  color: orange; 
 }
 /* @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400);
 @import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
